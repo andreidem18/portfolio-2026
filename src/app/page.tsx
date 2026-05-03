@@ -1,5 +1,5 @@
-import { CursorGlow, Navigation } from "@/features/layout/components";
-import { HeroSection } from "@/features/hero/components";
+import { CursorGlow, Navigation } from "@/features/layout";
+import { HeroSection } from "@/features/hero";
 
 export default function Home() {
   return (
