@@ -1,9 +1,17 @@
-import { Background } from "@/features/layout/components";
+import { CursorGlow, Navigation } from "@/features/layout/components";
+import { HeroSection } from "@/features/hero/components";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-950 via-cyan-950 to-slate-950 overflow-x-hidden">
-      <Background />
+    <div className="min-h-[200dvh] bg-linear-to-br overflow-x-hidden">
+
+      <CursorGlow />
+      <div className="flex flex-col h-dvh pt-18">
+        <Navigation />
+        <HeroSection />
+      </div>
+      <div className="h-dvh bg-brand"></div>
+      <div className="h-dvh"></div>
       Hello world
     </div>
   );
