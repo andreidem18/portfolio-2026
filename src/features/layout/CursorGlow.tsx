@@ -1,7 +1,7 @@
 "use client";
 
+import gsap from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
 export const CursorGlow = () => {

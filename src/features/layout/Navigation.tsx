@@ -1,11 +1,10 @@
 "use client";
 
-import gsap from "gsap";
+import gsap from "@/lib/gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Menu } from "lucide-react";
 import { useEffect, useRef } from "react";
 
-gsap.registerPlugin(ScrollTrigger);
 
 export const Navigation = () => {
   const navRef = useRef(null);
