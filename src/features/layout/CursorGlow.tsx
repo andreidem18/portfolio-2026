@@ -1,11 +1,14 @@
 "use client";
 
 import gsap from "@/lib/gsap";
+import { cn } from "@/lib/utils";
+import { useLayoutStore } from "@/stores";
 import { useGSAP } from "@gsap/react";
 import { useEffect, useRef } from "react";
 
 export const CursorGlow = () => {
   const glowRef = useRef<HTMLDivElement | null>(null);
+  const isMenuOpen = useLayoutStore((s) => s.isMenuOpen);
 
   useGSAP(() => {
     if (!glowRef.current) return;
@@ -29,7 +32,13 @@ export const CursorGlow = () => {
 
   return (
     <div
-      className="bg-[radial-gradient(circle,rgba(80,79,237,0.22)_0%,rgba(80,79,237,0.07)_40%,transparent_70%)] size-150 fixed z-20 pointer-events-none"
+      className={cn(
+        "bg-[radial-gradient(circle,rgba(80,79,237,0.22)_0%,rgba(80,79,237,0.07)_40%,transparent_70%)] size-150 fixed z-20 pointer-events-none",
+        {
+          "bg-[radial-gradient(circle,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.06)_40%,transparent_70%)]":
+            isMenuOpen,
+        },
+      )}
       ref={glowRef}
     />
   );
