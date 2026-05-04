@@ -36,7 +36,6 @@ export const TextChanging = () => {
         opacity: 0,
         duration: 0.2,
         onComplete: () => {
-          console.log({ wordIndex: wordIndex });
           if (!wordRef.current) return;
           setWordIndex((value) =>
             value + 1 > words.length - 1 ? 0 : value + 1,
