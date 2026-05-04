@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { ALL_TECHS } from "./tecsIcons";
+import { ALL_TECHS } from "./techsIcons";
 import { Tech } from "./types";
 import { cn } from "@/lib/utils";
 
