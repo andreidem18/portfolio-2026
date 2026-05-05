@@ -1,6 +1,7 @@
 import { CursorGlow, Navigation } from "@/features/layout";
 import { HeroSection } from "@/features/hero";
 import { AboutMeSection } from "@/features/aboutMe";
+import { Experience } from "@/features/experience";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroSection />
       </div>
       <AboutMeSection />
+      <Experience />
       <div className="h-dvh"></div>
       Hello world
     </div>
