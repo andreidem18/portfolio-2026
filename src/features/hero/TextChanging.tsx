@@ -4,17 +4,19 @@ import TextPlugin from "gsap/TextPlugin";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
 import gsap from "@/lib/gsap";
+import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(TextPlugin);
 
-const words = [
-  "Full stack developer",
-  "Frontend developer",
-  "Backend developer",
-  "Software engineer",
-];
-
 export const TextChanging = () => {
+  const t = useTranslations("hero");
+
+  const words = [
+    t("fullStack"),
+    t("frontend"),
+    t("backend"),
+    t("softwareEngineer"),
+  ];
   const wordRef = useRef<HTMLElement | null>(null);
   const [wordIndex, setWordIndex] = useState(0);
 

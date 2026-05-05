@@ -12,10 +12,12 @@ import { CursorGlow } from "./CursorGlow";
 import { ArrowRight, XIcon } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "@/lib/gsap";
+import { useTranslations } from "next-intl";
 
 export const NavigationMenu = () => {
   const isMenuOpen = useLayoutStore((s) => s.isMenuOpen);
   const setIsMenuOpen = useLayoutStore((s) => s.setIsMenuOpen);
+  const t = useTranslations("navbar");
 
   useGSAP(() => {
     requestAnimationFrame(() => {
@@ -45,6 +47,12 @@ export const NavigationMenu = () => {
     });
   }, [isMenuOpen]);
 
+  const navItems = [
+    {name: t("experience"), href: "#experience"},
+    {name: t("skills"), href: "#skills"},
+    {name: t("projects"), href: "#projects"},
+  ]
+
   return (
     <Dialog open={isMenuOpen} onOpenChange={setIsMenuOpen}>
       <DialogContent
@@ -68,13 +76,13 @@ export const NavigationMenu = () => {
         <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
         <DialogDescription className="sr-only" />
         <nav className="h-full flex flex-col justify-center p-6 gap-6">
-          {["/Experience", "/Skills", "/Projects"].map((item, index) => (
+          {navItems.map((item) => (
             <a
-              key={index}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
+              key={item.href}
+              href={item.href}
               className="text-white hover:text-white/80 transition-colors relative group text-[clamp(3rem,6vw,5rem)] w-fit leading-[80%] font-medium nav-links"
             >
-              {item}
+              {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.75 bg-white/80 group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}

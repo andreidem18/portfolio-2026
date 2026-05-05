@@ -1,0 +1,14 @@
+{
+  "navbar": {
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "connectCTA": "Let's connect"
+  },
+  "hero": {
+    "fullStack": "Fullstack Developer",
+    "frontend": "Frontend Developer",
+    "backend": "Backend Developer",
+    "softwareEngineer": "Software Engineer"
+  }
+}

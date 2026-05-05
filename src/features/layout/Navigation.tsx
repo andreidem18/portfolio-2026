@@ -5,6 +5,7 @@ import { useLayoutStore } from "@/stores";
 import { Menu } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { NavigationMenu } from "./NavigationMenu";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export const Navigation = () => {
   const navRef = useRef(null);
@@ -59,15 +60,17 @@ export const Navigation = () => {
         <div className="mx-auto px-15 py-5.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              {/* <Code2 className="w-8 h-8 text-brand" /> */}
               <span className="text-sm text-brand max-w-8 leading-none">
                 <span className="font-bold">Andrés </span>
                 <span className="">Mendoza</span>
               </span>
             </div>
-            <button className="cursor-pointer" onClick={() => setIsMenuOpen(true)}>
-              <Menu className="text-brand" />
-            </button>
+            <div className="flex gap-6">
+              <LanguageSwitcher />
+              <button className="cursor-pointer" onClick={() => setIsMenuOpen(true)}>
+                <Menu className="text-brand" />
+              </button>
+            </div>
           </div>
         </div>
         <div className="absolute inset-0 bg-white/60 -z-10"></div>
