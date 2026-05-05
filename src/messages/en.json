@@ -10,5 +10,12 @@
     "frontend": "Frontend Developer",
     "backend": "Backend Developer",
     "softwareEngineer": "Software Engineer"
+  },
+  "aboutMe": {
+    "line1": "I enjoy building solutions that scale",
+    "line2": "well over time and are easy to maintain.",
+    "line3": "I like focusing on user experience",
+    "line4": "and working with teams to create useful,",
+    "line5": "clear, and reliable products."
   }
 }

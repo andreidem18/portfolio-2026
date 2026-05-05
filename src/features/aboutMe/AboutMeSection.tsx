@@ -2,9 +2,9 @@
 
 import gsap from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import { SplitText } from "gsap/SplitText";
 import { useRef } from "react";
 import { Techs } from "./Techs";
+import { useTranslations } from "next-intl";
 
 export const AboutMeSection = () => {
   const paragraphRef = useRef<HTMLParagraphElement | null>(null);
@@ -40,6 +40,8 @@ export const AboutMeSection = () => {
     }, "displayIcons");
   }, []);
 
+  const t = useTranslations("aboutMe");
+
   return (
     <section
       className="h-dvh flex flex-col md:justify-center bg-brand text-white p-12 lg:p-22 pt-20"
@@ -51,23 +53,22 @@ export const AboutMeSection = () => {
       >
         <span className="about-me-line block">
           <span className="font-bold">
-            I create systems that are scalable {" "}
+            {t("line1")} {" "}
           </span>
         </span>
         <span className="about-me-line block">
           <span className="font-bold">
-            and maintainable.{" "}
+            {t("line2")} {" "}
           </span>
-          Always focusing
         </span>
         <span className="about-me-line block">
-          on user experience and collaborating {" "}
+          {t("line3")} {" "}
         </span>
         <span className="about-me-line block">
-          with cross-functional teams to deliver {" "}
+          {t("line4")} {" "}
         </span>
         <span className="about-me-line block">
-          reliable and efficient solutions.
+          {t("line5")}
         </span>
       </p>
       <div className="opacity-0 grow md:grow-0 overflow-hidden" ref={techsRef}><Techs /></div>
