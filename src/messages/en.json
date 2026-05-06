@@ -17,5 +17,20 @@
     "line3": "I like focusing on user experience",
     "line4": "and working with teams to create useful,",
     "line5": "clear, and reliable products."
+  },
+  "experience": {
+    "title": "My experience",
+    "finaipro": {
+      "title": "Full Stack Developer",
+      "items": "<li>Developed reusable React components improving development speed across the team</li><li>Contributed to performance optimization reducing load times</li><li>Collaborated with UX team to improve user experience in key flows</li><li>Built and maintained REST APIs using Node.js</li><li>Worked with PostgreSQL for scalable data solutions</li>"
+    },
+    "academlo": {
+      "title": "Full Stack Developer and instructor",
+      "items": "<li>Developed and maintained web services for internal platforms, contributing to the stability and scalability of the system</li><li>Delivered live technical classes on React, Node.js, Express, and SQL, training 300+ students in real-world web development</li><li>Mentored students through hands-on projects, helping them build and deploy full stack applications</li><li>Bridged development and education by simplifying complex technical concepts and improving learning outcomes</li><li>Strengthened communication, problem-solving, and mentoring skills in a fast-paced learning environment</li>"
+    },
+    "aisd": {
+      "title": "Junior Full Stack Developer",
+      "items": "<li>Developed web applications using React and Django, integrating frontend interfaces with backend services</li><li>Participated in the full development lifecycle, from feature design to implementation, testing, and deployment</li><li>Built and consumed REST APIs to enable efficient communication between systems</li><li>Collaborated with cross-functional teams to deliver user-focused solutions</li><li>Gained hands-on experience in full stack development, improving code quality and development workflows</li>"
+    }
   }
 }
