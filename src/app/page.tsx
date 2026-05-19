@@ -5,7 +5,7 @@ import { Experience } from "@/features/experience";
 
 export default function Home() {
   return (
-    <div className="min-h-[200dvh] bg-linear-to-br overflow-x-hidden">
+    <div className="min-h-[200dvh] bg-linear-to-br ">
 
       <CursorGlow />
       <div className="flex flex-col h-dvh pt-18">
