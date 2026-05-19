@@ -1,1 +1,1 @@
-export { default as heroBackground } from "./heroBackground.jpg";
+export * from "./testimonials";
