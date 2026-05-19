@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 import { Briefcase, Calendar } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { getExperienceItems } from "./experienceItems";
+import { getExperienceItems } from "../data/experienceItems";
 import { cn } from "@/lib/utils";
 
 export const Experience = () => {

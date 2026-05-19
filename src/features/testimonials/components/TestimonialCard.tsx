@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Testimonial } from "./testimonialsData";
+import { Testimonial } from "../data/testimonialsData";
 import { useTranslations } from "next-intl";
 import { Maximize2Icon, QuoteIcon } from "lucide-react";
 

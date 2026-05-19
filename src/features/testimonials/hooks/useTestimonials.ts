@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
 import gsap from "@/lib/gsap";
-import { type Testimonial, testimonialsData } from "./testimonialsData";
+import { type Testimonial, testimonialsData } from "../data/testimonialsData";
 
 export const useTestimonials = () => {
   const [testimonialSelected, setTestimonialSelected] =

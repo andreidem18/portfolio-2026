@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { ALL_TECHS } from "./techsIcons";
-import { Tech } from "./types";
+import { Tech } from "../types";
 import { cn } from "@/lib/utils";
 
 export const Techs = () => {

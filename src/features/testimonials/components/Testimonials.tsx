@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { testimonialsData } from "./testimonialsData";
+import { testimonialsData } from "../data/testimonialsData";
 import { TestimonialExpanded } from "./TestimonialExpanded";
 import { TestimonialCard } from "./TestimonialCard";
 import { Progress } from "@/components/ui/progress";
-import { useTestimonials } from "./useTestimonials";
+import { useTestimonials } from "../hooks/useTestimonials";
 
 export const Testimonials = () => {
   const t = useTranslations("testimonials");

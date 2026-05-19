@@ -1,2 +1,2 @@
-export { Navigation } from "./Navigation";
-export { CursorGlow } from "./CursorGlow";
+export { Navigation } from "./components/Navigation";
+export { CursorGlow } from "./components/CursorGlow";

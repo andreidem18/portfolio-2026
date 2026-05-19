@@ -1,4 +1,4 @@
-import { Tech } from "../types";
+import { Tech } from "../../types";
 import { Angular } from "./Angular";
 import { Django } from "./Django";
 import { Html5 } from "./Html5";

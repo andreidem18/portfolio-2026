@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
-import { Testimonial } from "./testimonialsData";
+import { Testimonial } from "../data/testimonialsData";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
