@@ -24,9 +24,9 @@ export const TestimonialCard = ({
           alt={testimonial.name}
           width={70}
           height={70}
-          className="rounded-full absolute -top-5 -left-7"
+          className="rounded-full absolute -top-5 -left-7 h-17.5! object-cover"
         />
-        <p className="italic line-clamp-5">
+        <p className="italic line-clamp-10 md:line-clamp-5">
           {t.rich(testimonial.testimonial, {
             p: (chunks) => <>{chunks}</>,
           })}
