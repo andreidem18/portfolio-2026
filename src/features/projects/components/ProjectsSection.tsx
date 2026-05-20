@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
-import { projectsData } from "../data/projectsData";
+import { projectsData } from "../data/projects.data";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 

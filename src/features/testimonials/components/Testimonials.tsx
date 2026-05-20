@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { testimonialsData } from "../data/testimonialsData";
+import { testimonialsData } from "../data/testimonials.data";
 import { TestimonialExpanded } from "./TestimonialExpanded";
 import { TestimonialCard } from "./TestimonialCard";
 import { Progress } from "@/components/ui/progress";
