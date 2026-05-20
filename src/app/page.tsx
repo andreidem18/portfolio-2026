@@ -3,6 +3,7 @@ import { HeroSection } from "@/features/hero";
 import { AboutMeSection } from "@/features/aboutMe";
 import { Experience } from "@/features/experience";
 import { Testimonials } from "@/features/testimonials";
+import { ProjectsSection } from "@/features/projects";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutMeSection />
       <Experience />
       <Testimonials />
+      <ProjectsSection />
       <div className="h-dvh"></div>
       Hello world
     </div>

@@ -41,5 +41,11 @@
     "brayanMunoz": "<p>Trabajar con Andrés ha sido sin duda alguna una de las mejores experiencias, nunca lo consideré como un compañero, más bien siempre fue un amigo que siempre estuvo dispuesto ha ayudar y compartir sus conocimientos de todos los profesionales con los que he trabajado, Andrés es uno de los mejores con los que me he topado, siempre fue más persona que profesional.</p>",
     "jesusFernandez": "<p>Andrés es más que un amigo, es un colega excepcional que conocí durante el bootcamp en Academlo. Desde competir por el primer puesto en clase hasta trabajar juntos en la misma empresa que nos vio crecer, ha demostrado ser no solo un brillante profesional en el desarrollo web full stack, sino también un ser humano increíblemente amable y siempre dispuesto a brindar apoyo. Su combinación de habilidades técnicas y calidad humana lo convierten en un compañero invaluable.</p>",
     "camiloRomero": "<p>Tuve la oportunidad de liderar a Andrés durante casi dos años en los proyectos Finaipro y ConecTEA, y desde que se incorporó al equipo siempre aportó mucho valor. Se destacó por su proactividad, su actitud colaborativa y su capacidad para proponer mejores alternativas, manteniéndose siempre abierto a realizar cambios cuando eran convenientes para el proyecto. Andrés es una persona confiable, positiva y con la que da gusto trabajar.</p>"
+  },
+  "projects": {
+    "title": "<bold>Mira algunos de mis</bold> <light>proyectos personales...</light>",
+    "toursAppDescription": "Aplicación para gestionar tours. Cuenta con una vista de usuario donde se pueden ver los tours, se pueden agendar y se pueden rankear. Y cuenta con una vista de administrador, donde se pueden crear y administrar tours.",
+    "flowboardDescription": "Aplicación de gestión de tareas inspirada en Jira. Permite a los usuarios crear tableros, listas y tarjetas para organizar sus tareas y proyectos de manera eficiente.",
+    "starluxDescription": "Sitio web de e-commerce para una marca ficticia de joyería. Cuenta con un diseño elegante, catálogo de productos, carrito de compras y checkout para brindar a los usuarios una experiencia de compra en línea fluida y atractiva."
   }
 }

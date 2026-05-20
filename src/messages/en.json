@@ -41,5 +41,11 @@
     "brayanMunoz": "<p>Working with Andrés has undoubtedly been one of the best experiences. I never considered him just a colleague; rather, he has always been a friend who was ready to help and share his knowledge with all the professionals I have worked with. Andrés is one of the best individuals I have encountered; he has consistently been more of a person than a professional.</p>",
     "jesusFernandez": "<p>Andrés is more than a friend; he is an exceptional colleague whom I met during the bootcamp at Academlo. From competing for the top spot in class to working together in the same company that saw us grow, he has proven to be not only a brilliant professional in full-stack web development but also an incredibly kind human being always ready to offer support. His combination of technical skills and human quality makes him an invaluable companion.</p>",
     "camiloRomero": "<p>I had the opportunity to lead Andrés for nearly two years on the Finaipro and ConecTEA projects, and from the moment he joined the team, he consistently brought significant value. He stood out for his proactivity, collaborative attitude, and ability to propose better alternatives, while always remaining open to making changes when they benefited the project. Andrés is a reliable, positive person and truly a pleasure to work with.</p>"
+  },
+  "projects": {
+    "title": "<bold>Check some of my</bold> <light>personal works...</light>",
+    "toursAppDescription": "App to manage tours. It have a user view where people can see the tours, can book and can rank them. It also have a admin view, where admins can create a manage tours.",
+    "flowboardDescription": "Task management app inspired by Jira. It allows users to create boards, lists, and cards to organize their tasks and projects efficiently.",
+    "starluxDescription": "E-commerce website for a fictional luxury jewelry brand. It features a sleek design, product catalog, shopping cart, and a checkout process to provide users with a seamless online shopping experience."
   }
 }
