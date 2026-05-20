@@ -1,5 +1,7 @@
 export { Angular } from "./Angular";
+export { Express } from "./Express";
 export { Django } from "./Django";
+export { Github } from "./Github";
 export { Html5 } from "./Html5";
 export { JavaScript } from "./JavaScript";
 export { NestJs } from "./NestJs";

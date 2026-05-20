@@ -11,10 +11,27 @@ import {
   Python,
   TypeScript,
   Postgresql,
+  Express,
 } from "../components/techsIcons";
 import { Tech } from "../types/Tech";
 
-export const techs: { [key: string]: Tech } = {
+type techKeys =
+  | "angular"
+  | "django"
+  | "elysia"
+  | "express"
+  | "html"
+  | "javascript"
+  | "mongodb"
+  | "nestjs"
+  | "nextjs"
+  | "nodejs"
+  | "postgresql"
+  | "python"
+  | "react"
+  | "typescript";
+
+export const techs: Record<techKeys, Tech> = {
   angular: {
     name: "Angular",
     icon: Angular,
@@ -24,6 +41,16 @@ export const techs: { [key: string]: Tech } = {
     name: "Django",
     icon: Django,
     color: "#003e2b",
+  },
+  elysia: {
+    name: "Elysia",
+    icon: NodeDotJs,
+    color: "#f449c7",
+  },
+  express: {
+    name: "Express",
+    icon: Express,
+    color: "#333333",
   },
   html: {
     name: "HTML",
