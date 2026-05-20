@@ -1,10 +1,9 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { ALL_TECHS } from "./techsIcons";
-import { Tech } from "../types";
 import { cn } from "@/lib/utils";
+import { techStackData, type Tech } from "@/features/stack";
 
 export const Techs = () => {
-  const [visibleItems, setVisibleItems] = useState(ALL_TECHS.slice(0, 6));
+  const [visibleItems, setVisibleItems] = useState(techStackData.slice(0, 6));
 
   return (
     <div className="grid gap-4 pt-10 h-full grid-cols-3 md:grid-cols-6 lg:pt-16">
@@ -12,7 +11,7 @@ export const Techs = () => {
         <TechItem
           tech={tech}
           setVisibleItems={setVisibleItems}
-          key={tech.id}
+          key={tech.name}
           index={index}
         />
       ))}
@@ -82,15 +81,8 @@ const getRandomNumber = (min: number, max: number) => {
 };
 
 const findRandomTechId = (visibleTechs: Tech[]) => {
-  const techIds = visibleTechs.map((t) => t.id);
-  let newId = Math.floor(Math.random() * ALL_TECHS.length) + 1;
-  while (techIds.includes(newId)) {
-    newId = Math.floor(Math.random() * ALL_TECHS.length) + 1;
-  }
-  const newTech = ALL_TECHS.find((t) => t.id === newId);
-  if (!newTech) {
-    console.log("Error");
-    throw new Error("There was a problem loading the techs");
-  }
-  return newTech;
+  const visibleNames = new Set(visibleTechs.map((t) => t.name));
+  const available = techStackData.filter((t) => !visibleNames.has(t.name));
+  if (!available.length) throw new Error("There was a problem loading the techs");
+  return available[Math.floor(Math.random() * available.length)];
 };

@@ -1,0 +1,12 @@
+export { Angular } from "./Angular";
+export { Django } from "./Django";
+export { Html5 } from "./Html5";
+export { JavaScript } from "./JavaScript";
+export { NestJs } from "./NestJs";
+export { NextDotJs } from "./NextDotJs";
+export { NodeDotJs } from "./NodeDotJs";
+export { Python } from "./Python";
+export { React } from "./React";
+export { TypeScript } from "./TypeScript";
+export { Mongodb } from "./Mongodb";
+export { Postgresql } from "./Postgresql";
