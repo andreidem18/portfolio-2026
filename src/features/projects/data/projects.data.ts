@@ -46,10 +46,10 @@ export const projectsData: Project[] = [
     github: "https://github.com/andreidem18/flowboard",
     technologies: [techs.react, techs.nodejs, techs.elysia, techs.postgresql],
     images: [
+      flowboardTaskBoard,
       flowboardLogin,
       flowboardDashboard,
       flowboardDashboard2,
-      flowboardTaskBoard,
       flowboardTaskForm,
     ],
   },

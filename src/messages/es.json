@@ -44,6 +44,7 @@
   },
   "projects": {
     "title": "<bold>Mira algunos de mis</bold> <light>proyectos personales...</light>",
+    "seeProject": "Ver proyecto",
     "toursAppDescription": "Aplicación para gestionar tours. Cuenta con una vista de usuario donde se pueden ver los tours, se pueden agendar y se pueden rankear. Y cuenta con una vista de administrador, donde se pueden crear y administrar tours.",
     "flowboardDescription": "Aplicación de gestión de tareas inspirada en Jira. Permite a los usuarios crear tableros, listas y tarjetas para organizar sus tareas y proyectos de manera eficiente.",
     "starluxDescription": "Sitio web de e-commerce para una marca ficticia de joyería. Cuenta con un diseño elegante, catálogo de productos, carrito de compras y checkout para brindar a los usuarios una experiencia de compra en línea fluida y atractiva."

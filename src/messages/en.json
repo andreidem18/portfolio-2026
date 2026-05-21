@@ -44,6 +44,7 @@
   },
   "projects": {
     "title": "<bold>Check some of my</bold> <light>personal works...</light>",
+    "seeProject": "See project",
     "toursAppDescription": "App to manage tours. It have a user view where people can see the tours, can book and can rank them. It also have a admin view, where admins can create a manage tours.",
     "flowboardDescription": "Task management app inspired by Jira. It allows users to create boards, lists, and cards to organize their tasks and projects efficiently.",
     "starluxDescription": "E-commerce website for a fictional luxury jewelry brand. It features a sleek design, product catalog, shopping cart, and a checkout process to provide users with a seamless online shopping experience."
