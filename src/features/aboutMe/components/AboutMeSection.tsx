@@ -5,6 +5,8 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { Techs } from "./Techs";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { meImage } from "@/assets/images";
 
 export const AboutMeSection = () => {
   const paragraphRef = useRef<HTMLParagraphElement | null>(null);
@@ -44,34 +46,42 @@ export const AboutMeSection = () => {
 
   return (
     <section
-      className="h-dvh flex flex-col md:justify-center bg-brand text-white p-12 lg:p-22 pt-20"
+      className="h-dvh bg-brand text-white flex"
       ref={aboutMeSectionRef}
     >
-      <p
-        className="text-[clamp(1.25rem,3.2vw,3rem)] leading-6 sm:leading-7 md:leading-8 lg:leading-9 xl:leading-13"
-        ref={paragraphRef}
-      >
-        <span className="about-me-line block">
-          <span className="font-bold">
-            {t("line1")} {" "}
+      <div className="flex flex-col md:justify-center p-12 lg:p-22 pt-20 grow">
+
+        <p
+          className="text-[clamp(1.25rem,3.2vw,3rem)] leading-6 sm:leading-7 md:leading-8 lg:leading-9 xl:leading-13"
+          ref={paragraphRef}
+        >
+          <span className="about-me-line block">
+            <span className="font-bold">
+              {t("line1")} {" "}
+            </span>
           </span>
-        </span>
-        <span className="about-me-line block">
-          <span className="font-bold">
-            {t("line2")} {" "}
+          <span className="about-me-line block">
+            <span className="font-bold">
+              {t("line2")} {" "}
+            </span>
           </span>
-        </span>
-        <span className="about-me-line block">
-          {t("line3")} {" "}
-        </span>
-        <span className="about-me-line block">
-          {t("line4")} {" "}
-        </span>
-        <span className="about-me-line block">
-          {t("line5")}
-        </span>
-      </p>
-      <div className="opacity-0 grow md:grow-0 overflow-hidden" ref={techsRef}><Techs /></div>
+          <span className="about-me-line block">
+            {t("line3")} {" "}
+          </span>
+          <span className="about-me-line block">
+            {t("line4")} {" "}
+          </span>
+          <span className="about-me-line block">
+            {t("line5")}
+          </span>
+        </p>
+        <div className="opacity-0 grow md:grow-0 overflow-hidden" ref={techsRef}><Techs /></div>
+      </div>
+      <Image 
+        src={meImage}
+        alt="About Me"
+        className=" object-cover w-1/4 hidden lg:block"
+      />
     </section>
   );
 };
