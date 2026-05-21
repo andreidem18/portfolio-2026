@@ -19,7 +19,7 @@
     "line5": "clear, and reliable products."
   },
   "experience": {
-    "title": "My experience",
+    "title": "<bold>My</bold> experience",
     "finaipro": {
       "title": "Full Stack Developer",
       "items": "<li>Developed reusable React components improving development speed across the team</li><li>Contributed to performance optimization reducing load times</li><li>Collaborated with UX team to improve user experience in key flows</li><li>Built and maintained REST APIs using Node.js</li><li>Worked with PostgreSQL for scalable data solutions</li>"
