@@ -17,7 +17,7 @@ export const TestimonialCard = ({
     <li key={testimonial.name} className="relative w-full">
       <button
         onClick={() => setTestimonialSelected(testimonial)}
-        className="leading-[130%] border rounded-3xl relative p-7 px-11 bg-off-white z-20 h-full text-left font-normal cursor-pointer duration-200 hover:-translate-y-2 group"
+        className="leading-[130%] border rounded-3xl relative p-7 px-11 bg-white z-20 h-full text-left font-normal cursor-pointer duration-200 hover:-translate-y-2 group"
       >
         <Image
           src={testimonial.photoUrl}
@@ -48,7 +48,7 @@ export const TestimonialCard = ({
         </div>
       </button>
       <QuoteIcon
-        className="absolute -bottom-5 -right-9 text-muted-foreground/20"
+        className="absolute -bottom-5 -right-9 text-white/20"
         size={60}
       />
     </li>

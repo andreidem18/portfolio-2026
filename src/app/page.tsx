@@ -16,8 +16,8 @@ export default function Home() {
       </div>
       <AboutMeSection />
       <Experience />
-      <Testimonials />
       <ProjectsSection />
+      <Testimonials />
       <div className="h-dvh"></div>
       Hello world
     </div>
