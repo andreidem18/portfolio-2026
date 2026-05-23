@@ -20,7 +20,7 @@ export const useProjectItemAnimations = ({ project }: Params) => {
       scrollTrigger: {
         trigger: projectRef.current,
         start: "top top",
-        end: "+=3500",
+        end: "+=1500",
         scrub: -1,
         pin: true,
         pinSpacing: true,
