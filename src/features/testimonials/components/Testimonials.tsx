@@ -16,6 +16,7 @@ export const Testimonials = () => {
     setTestimonialSelected,
     testimonialSelected,
     trackRef,
+    titleRef,
     viewportRef,
   } = useTestimonials();
 
@@ -23,9 +24,9 @@ export const Testimonials = () => {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="flex flex-col justify-center gap-4 py-10 h-dvh bg-brand"
+      className="flex flex-col justify-center gap-4 py-10 h-dvh bg-brand overflow-hidden relative"
     >
-      <h3 className="text-[clamp(1.5rem,3.2vw,2.25rem)] max-w-130 leading-[110%] pb-4 text-white  px-10">
+      <h3 className="text-[clamp(1.5rem,3.2vw,2.25rem)] max-w-130 leading-[110%] pb-4 text-white  px-10" ref={titleRef}>
         {t.rich("title", { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
       </h3>
       <div ref={viewportRef} className="overflow-hidden">
@@ -54,6 +55,8 @@ export const Testimonials = () => {
         testimonialSelected={testimonialSelected}
         setTestimonialSelected={setTestimonialSelected}
       />
+      <div className="bg-white/35 size-90 rounded-full absolute bottom-10  -left-20 circle-background -z-10"></div>
+      <div className="bg-white/20 size-30 rounded-full absolute top-40 -right-10 circle-background -z-10"></div>
     </section>
   );
 };

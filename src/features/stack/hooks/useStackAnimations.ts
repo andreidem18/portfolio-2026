@@ -63,7 +63,9 @@ export const useStackAnimations = ({ titleRef }: Params) => {
         },
       });
 
-      tl.to(".circle-background", { y: -100, duration: 5 }, 0);
+      const circles = gsap.utils.toArray<HTMLElement>(".circle-background", sectionRef.current);
+
+      tl.to(circles, { y: -100, duration: 5 }, 0);
       tl.to(titleRef.current, { y: -10, duration: 5 }, 0);
 
       cards.forEach((card, i) => {

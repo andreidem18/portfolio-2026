@@ -12,6 +12,7 @@ export const useTestimonials = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLUListElement | null>(null);
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
 
   useGSAP(() => {
     const track = trackRef.current;
@@ -21,9 +22,7 @@ export const useTestimonials = () => {
     const getDistance = () =>
       Math.max(0, track.scrollWidth - viewport.clientWidth);
 
-    gsap.to(track, {
-      x: () => -getDistance(),
-      ease: "none",
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top top",
@@ -33,6 +32,28 @@ export const useTestimonials = () => {
         invalidateOnRefresh: true,
         onUpdate: (self) => setProgress(self.progress),
       },
+    });
+
+    tl.to(track, {
+      x: () => -getDistance(),
+      ease: "none",
+    });
+
+    const circles = gsap.utils.toArray<HTMLElement>(
+      ".circle-background",
+      sectionRef.current,
+    );
+
+    tl.to(titleRef.current, { y: -30 }, 0);
+
+    circles.forEach((circle, i) => {
+      tl.to(
+        circle,
+        {
+          y: i % 2 === 0 ? -20 : 40,
+        },
+        0,
+      );
     });
   }, []);
 
@@ -49,5 +70,6 @@ export const useTestimonials = () => {
     testimonialSelected,
     trackRef,
     viewportRef,
+    titleRef,
   };
 };
