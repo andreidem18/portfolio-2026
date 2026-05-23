@@ -5,3 +5,8 @@ export interface Tech {
   icon: (props: SVGAttributes<SVGSVGElement>) => React.JSX.Element;
   color: string;
 }
+
+export interface TechCategory {
+  name: string;
+  techs: Tech[];
+}

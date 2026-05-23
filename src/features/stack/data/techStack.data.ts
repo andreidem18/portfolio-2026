@@ -20,7 +20,7 @@ import {
   GithubActions,
 } from "../components/techsIcons";
 import { Docker } from "../components/techsIcons/Docker";
-import { Tech } from "../types/Tech";
+import { Tech, TechCategory } from "../types/Tech";
 
 type techKeys =
   | "angular"
@@ -189,7 +189,7 @@ export const devOpsTechs = [techs.git, techs.docker, techs.aws, techs.kubernetes
 
 export const iaTechs = [techs.claude, techs.opencode, techs.copilot];
 
-export const techsByCategory = [
+export const techsByCategory: TechCategory[] = [
   {
     name: "Frontend",
     techs: frontendTechs,
