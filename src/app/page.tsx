@@ -5,6 +5,7 @@ import { Experience } from "@/features/experience";
 import { Testimonials } from "@/features/testimonials";
 import { ProjectsSection } from "@/features/projects";
 import { MyStackSection } from "@/features/stack/components/MyStackSection";
+import { CTASection } from "@/features/CTA";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <MyStackSection />
       <ProjectsSection />
       <Testimonials />
+      <CTASection />
       <div className="h-dvh"></div>
       Hello world
     </div>

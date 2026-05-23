@@ -1,0 +1,1 @@
+export { useTitleAnimations } from "./useTitleAnimations";

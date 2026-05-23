@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { NextIntlClientProvider } from "next-intl";
 import { LenisProvider } from "@/providers";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -29,7 +30,11 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col">
         <LenisProvider>
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider>
+            <TooltipProvider>
+              {children}
+            </TooltipProvider>
+          </NextIntlClientProvider>
         </LenisProvider>
       </body>
     </html>
