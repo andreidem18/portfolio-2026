@@ -4,6 +4,7 @@ import { AboutMeSection } from "@/features/aboutMe";
 import { Experience } from "@/features/experience";
 import { Testimonials } from "@/features/testimonials";
 import { ProjectsSection } from "@/features/projects";
+import { MyStackSection } from "@/features/stack/components/MyStackSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <AboutMeSection />
       <Experience />
+      <MyStackSection />
       <ProjectsSection />
       <Testimonials />
       <div className="h-dvh"></div>

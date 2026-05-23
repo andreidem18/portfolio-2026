@@ -33,6 +33,9 @@
       "items": "<li>Developed web applications using React and Django, integrating frontend interfaces with backend services</li><li>Participated in the full development lifecycle, from feature design to implementation, testing, and deployment</li><li>Built and consumed REST APIs to enable efficient communication between systems</li><li>Collaborated with cross-functional teams to deliver user-focused solutions</li><li>Gained hands-on experience in full stack development, improving code quality and development workflows</li>"
     }
   },
+  "techStack": {
+    "title": "<bold>My stack</bold> of technologies..."
+  },
   "testimonials": {
     "title": "<bold>What my coworkers say</bold> about me...",
     "expand": "Expandir",

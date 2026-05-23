@@ -19,7 +19,7 @@
     "line5": "productos útiles, claros y confiables."
   },
   "experience": {
-    "title": "My experience",
+    "title": "<bold>Mi</bold> experiencia",
     "finaipro": {
       "title": "Desarrollador Full Stack",
       "items": "<li>Desarrollé componentes reutilizables en React, mejorando la velocidad de desarrollo del equipo</li> <li>Contribuí a la optimización del rendimiento, reduciendo los tiempos de carga</li> <li>Colaboré con el equipo de UX para mejorar la experiencia de usuario en flujos clave</li><li>Construí y mantuve APIs REST utilizando Node.js</li> <li>Trabajé con PostgreSQL para soluciones de datos escalables</li>"
@@ -32,6 +32,9 @@
       "title": "Desarrollador Full Stack Junior",
       "items": "<li>Desarrollé aplicaciones web utilizando React y Django, integrando interfaces frontend con servicios backend</li><li>Participé en todo el ciclo de vida del desarrollo, desde el diseño de funcionalidades hasta la implementación, pruebas y despliegue</li><li>Construí y consumí APIs REST para permitir una comunicación eficiente entre sistemas</li><li>Colaboré con equipos multidisciplinarios para entregar soluciones centradas en el usuario</li><li>Adquirí experiencia práctica en desarrollo full stack, mejorando la calidad del código y los flujos de trabajo de desarrollo</li>"
     }
+  },
+  "techStack": {
+    "title": "<bold>Mi stack</bold> de tecnologías..."
   },
   "testimonials": {
     "title": "<bold>Lo que mis compañeros dicen</bold> sobre mí...",
