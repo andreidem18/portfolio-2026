@@ -8,11 +8,12 @@ const TOOLTIP_ID = "cta-tooltip";
 export const CTAButton = () => {
   const t = useTranslations("contact");
   const {
-    copied,
     visible,
     tooltipStyle,
     buttonRef,
     tooltipRef,
+    tooltipTextRef,
+    typeText,
     handleCopy,
     handleMouseMove,
     handleFocus,
@@ -20,12 +21,22 @@ export const CTAButton = () => {
     setFocused,
   } = useCTATooltip();
 
+  const handleMouseEnter = () => {
+    setHovered(true);
+    typeText(t("copy"));
+  };
+
+  const handleClick = () => {
+    handleCopy(EMAIL);
+    typeText(t("copied"));
+  };
+
   return (
     <>
       <button
         ref={buttonRef}
-        onClick={() => handleCopy(EMAIL)}
-        onMouseEnter={() => setHovered(true)}
+        onClick={handleClick}
+        onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setHovered(false)}
         onMouseMove={handleMouseMove}
         onFocus={handleFocus}
@@ -48,7 +59,7 @@ export const CTAButton = () => {
         className={`fixed z-50 pointer-events-none px-3 py-1.5 rounded-md bg-black text-white text-sm shadow-md border border-border transition-opacity duration-150 ${visible ? "opacity-100" : "opacity-0"}`}
         style={tooltipStyle}
       >
-        {copied ? t("copied") : t("copy")}
+        <span ref={tooltipTextRef} />
       </div>
     </>
   );
