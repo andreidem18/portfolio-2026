@@ -13,7 +13,7 @@ export const Experience = () => {
       className="flex flex-col gap-2 justify-center items-center px-6 py-10"
     >
       <div className="max-w-250 lg:flex lg:gap-20">
-        <h3 className="text-center pt-4 lg:text-start lg:sticky h-fit lg:top-23 text-[clamp(1.5rem,3.2vw,3rem)] leading-[110%] ">
+        <h3 className="text-center pt-4 lg:text-start lg:sticky lg:pb-80 h-fit lg:top-23 text-[clamp(1.5rem,3.2vw,3rem)] leading-[110%] ">
           {t.rich("title", {
             bold: (chunks) => (
               <span className="font-extrabold text-brand animate-gradient-shift">{chunks}</span>
