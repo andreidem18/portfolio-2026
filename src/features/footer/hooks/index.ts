@@ -1,0 +1,1 @@
+export { useFooterAnimations} from "./useFooterAnimations"

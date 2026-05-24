@@ -1,16 +1,23 @@
+"use client";
+
 import { footerImage } from "@/assets/images";
 import { MapPinIcon } from "lucide-react";
+import { useFooterAnimations } from "../hooks";
 
 export const Footer = () => {
+  
+  const {containerRef, nameRef} = useFooterAnimations();
+
   return (
     <div
-      className="flex flex-col min-h-dvh bg-cover bg-center relative text-white"
-      style={{ backgroundImage: `url(${footerImage.src})` }}
+      ref={containerRef}
+      className="flex flex-col min-h-dvh bg-cover relative text-white"
+      style={{ backgroundImage: `url(${footerImage.src})`, backgroundPositionX: "center" }}
     >
       <section className="grow relative z-10 p-8 gap-5 flex flex-col lg:flex-row lg:justify-between">
-        <div className="flex flex-col text-[clamp(4rem,12vw,14rem)] font-light mt-10 gap-2 lg:leading-[100%]">
-          <span className="font-bold">Andrés</span>
-          <span>Mendoza</span>
+        <div ref={nameRef} className="flex flex-col text-[clamp(4rem,12vw,14rem)] font-light mt-10 gap-2 lg:leading-[100%]">
+          <SplitText text="Andrés" className="font-bold" />
+          <SplitText text="Mendoza" />
           <span className="text-base flex gap-2">
             <MapPinIcon /> Bogotá, Colombia
           </span>
@@ -50,3 +57,13 @@ export const Footer = () => {
     </div>
   );
 };
+
+const SplitText = ({ text, className }: { text: string; className?: string }) => (
+  <span className={className} aria-label={text}>
+    {text.split("").map((char, i) => (
+      <span key={i} className="letter inline-block" aria-hidden="true">
+        {char}
+      </span>
+    ))}
+  </span>
+);
