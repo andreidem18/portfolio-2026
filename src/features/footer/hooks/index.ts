@@ -1,1 +1,1 @@
-export { useFooterAnimations} from "./useFooterAnimations"
+export { useFooterAnimations } from "./useFooterAnimations";

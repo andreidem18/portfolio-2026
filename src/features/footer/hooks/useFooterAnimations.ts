@@ -2,7 +2,6 @@ import gsap from "@/lib/gsap";
 import { useEffect, useRef } from "react";
 
 export const useFooterAnimations = () => {
-
   const containerRef = useRef<HTMLDivElement>(null);
   const nameRef = useRef<HTMLDivElement>(null);
 
@@ -22,7 +21,7 @@ export const useFooterAnimations = () => {
           end: "bottom top",
           scrub: 2,
         },
-      }
+      },
     );
 
     const nameEl = nameRef.current;
@@ -44,7 +43,7 @@ export const useFooterAnimations = () => {
             end: "top 20%",
             scrub: 1,
           },
-        }
+        },
       );
     }
 
@@ -54,4 +53,4 @@ export const useFooterAnimations = () => {
   }, []);
 
   return { containerRef, nameRef };
-}
+};

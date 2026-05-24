@@ -2,5 +2,5 @@ export * from "./testimonials";
 export * from "./projects-images/flowboard";
 export * from "./projects-images/starlux";
 export * from "./projects-images/tours-app";
-export {default as meImage} from "./me.png";
-export {default as footerImage} from "./footer-image.png";
+export { default as meImage } from "./me.png";
+export { default as footerImage } from "./footer-image.png";

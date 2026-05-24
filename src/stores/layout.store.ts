@@ -1,4 +1,4 @@
-import { create } from 'zustand'
+import { create } from "zustand";
 
 interface LayoutStore {
   isMenuOpen: boolean;
@@ -7,5 +7,5 @@ interface LayoutStore {
 
 export const useLayoutStore = create<LayoutStore>()((set) => ({
   isMenuOpen: false,
-  setIsMenuOpen: (value) => set({isMenuOpen: value}),
-}))
+  setIsMenuOpen: (value) => set({ isMenuOpen: value }),
+}));

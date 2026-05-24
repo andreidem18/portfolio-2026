@@ -30,7 +30,7 @@ export const NavigationMenu = () => {
             opacity: 1,
             stagger: 0.15,
             delay: 0.3,
-            ease: "none"
+            ease: "none",
           },
         );
       } else {
@@ -48,10 +48,10 @@ export const NavigationMenu = () => {
   }, [isMenuOpen]);
 
   const navItems = [
-    {name: t("experience"), href: "#experience"},
-    {name: t("skills"), href: "#stack"},
-    {name: t("projects"), href: "#projects"},
-  ]
+    { name: t("experience"), href: "#experience" },
+    { name: t("skills"), href: "#stack" },
+    { name: t("projects"), href: "#projects" },
+  ];
 
   return (
     <Dialog open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -72,7 +72,9 @@ export const NavigationMenu = () => {
         showCloseButton={false}
         style={isMenuOpen ? {} : { animationDelay: "500ms" }}
       >
-        <DialogClose className="absolute top-7 right-19 text-white cursor-pointer"><XIcon /></DialogClose>
+        <DialogClose className="absolute top-7 right-19 text-white cursor-pointer">
+          <XIcon />
+        </DialogClose>
         <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
         <DialogDescription className="sr-only" />
         <nav className="h-full flex flex-col justify-center p-6 gap-6">

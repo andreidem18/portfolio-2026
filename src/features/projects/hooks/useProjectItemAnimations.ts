@@ -8,8 +8,7 @@ interface Params {
 }
 
 export const useProjectItemAnimations = ({ project }: Params) => {
-
-    const projectRef = useRef<HTMLDivElement | null>(null);
+  const projectRef = useRef<HTMLDivElement | null>(null);
   const seeProjectButton = useRef<HTMLAnchorElement | null>(null);
 
   const gsapClassItem = `project-col-${project.name.toLowerCase().replace(/\s+/g, "-")}`;
@@ -63,6 +62,6 @@ export const useProjectItemAnimations = ({ project }: Params) => {
       1,
     );
   }, []);
-  
+
   return { projectRef, seeProjectButton, gsapClassItem, gsapClassImages };
-}
+};

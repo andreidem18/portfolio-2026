@@ -11,9 +11,17 @@ export const MyStackSection = () => {
   const { titleRef } = useTitleAnimations();
   const { sectionRef, cardsContainerRef } = useStackAnimations({ titleRef });
   return (
-    <section ref={sectionRef} className="min-h-dvh bg-brand text-white relative overflow-hidden" id="stack">
+    <section
+      ref={sectionRef}
+      className="min-h-dvh bg-brand text-white relative overflow-hidden"
+      id="stack"
+    >
       <div className="max-w-6xl mx-auto py-20 px-10 min-h-dvh flex flex-col">
-        <h2 className="text-[clamp(1.5rem,3.2vw,3rem)] leading-[110%] " ref={titleRef} key={locale}>
+        <h2
+          className="text-[clamp(1.5rem,3.2vw,3rem)] leading-[110%] "
+          ref={titleRef}
+          key={locale}
+        >
           {t.rich("title", {
             bold: (chunks) => (
               <>
@@ -23,7 +31,10 @@ export const MyStackSection = () => {
             ),
           })}
         </h2>
-        <div ref={cardsContainerRef} className="flex flex-wrap justify-center items-stretch gap-4 pt-5 grow">
+        <div
+          ref={cardsContainerRef}
+          className="flex flex-wrap justify-center items-stretch gap-4 pt-5 grow"
+        >
           {techsByCategory.map((category) => (
             <TechCard category={category} key={category.name} />
           ))}

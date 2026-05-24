@@ -11,7 +11,6 @@ import { Footer } from "@/features/footer";
 export default function Home() {
   return (
     <div className="min-h-[200dvh] bg-linear-to-br ">
-
       <CursorGlow />
       <div className="flex flex-col h-dvh pt-18">
         <Navigation />

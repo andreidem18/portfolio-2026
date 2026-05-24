@@ -16,7 +16,9 @@ export const Experience = () => {
         <h3 className="text-center pt-4 lg:text-start lg:sticky lg:pb-80 h-fit lg:top-23 text-[clamp(1.5rem,3.2vw,3rem)] leading-[110%] ">
           {t.rich("title", {
             bold: (chunks) => (
-              <span className="font-extrabold text-brand animate-gradient-shift">{chunks}</span>
+              <span className="font-extrabold text-brand animate-gradient-shift">
+                {chunks}
+              </span>
             ),
           })}
         </h3>

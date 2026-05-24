@@ -21,7 +21,6 @@ import { StaticImageData } from "next/image";
 
 type ProjectKey = keyof typeof messages.projects;
 
-
 export interface Project {
   name: string;
   slug: string;
@@ -33,7 +32,6 @@ export interface Project {
   technologies: Tech[];
   images: StaticImageData[];
 }
-
 
 export const projectsData: Project[] = [
   {
@@ -63,7 +61,12 @@ export const projectsData: Project[] = [
     description: "toursAppDescription",
     date: new Date("2023-06-20"),
     github: "https://github.com/andreidem18/go-tour",
-    technologies: [techs.angular, techs.nodejs, techs.express, techs.postgresql],
+    technologies: [
+      techs.angular,
+      techs.nodejs,
+      techs.express,
+      techs.postgresql,
+    ],
     images: [
       toursUsersHome,
       toursUsersTourDetail,

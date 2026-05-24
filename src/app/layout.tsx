@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { LenisProvider } from "@/providers";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -26,14 +26,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "font-sans", montserrat.variable, inter.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        "font-sans",
+        montserrat.variable,
+        inter.variable,
+      )}
     >
       <body className="min-h-screen flex flex-col">
         <LenisProvider>
           <NextIntlClientProvider>
-            <TooltipProvider>
-              {children}
-            </TooltipProvider>
+            <TooltipProvider>{children}</TooltipProvider>
           </NextIntlClientProvider>
         </LenisProvider>
       </body>

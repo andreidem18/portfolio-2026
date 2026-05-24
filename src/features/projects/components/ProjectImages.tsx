@@ -8,7 +8,6 @@ interface Props {
 }
 
 export const ProjectImages = ({ project, gsapClassImages }: Props) => {
-
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-1 grow">
       {project.images.map((image, i) => (

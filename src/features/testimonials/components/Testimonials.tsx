@@ -26,8 +26,13 @@ export const Testimonials = () => {
       ref={sectionRef}
       className="flex flex-col justify-center gap-4 py-10 h-dvh bg-brand overflow-hidden relative"
     >
-      <h3 className="text-[clamp(1.5rem,3.2vw,2.25rem)] max-w-130 leading-[110%] pb-4 text-white  px-10" ref={titleRef}>
-        {t.rich("title", { bold: (chunks) => <span className="font-bold">{chunks}</span> })}
+      <h3
+        className="text-[clamp(1.5rem,3.2vw,2.25rem)] max-w-130 leading-[110%] pb-4 text-white  px-10"
+        ref={titleRef}
+      >
+        {t.rich("title", {
+          bold: (chunks) => <span className="font-bold">{chunks}</span>,
+        })}
       </h3>
       <div ref={viewportRef} className="overflow-hidden">
         <ul
@@ -45,7 +50,11 @@ export const Testimonials = () => {
       </div>
       <div className="flex justify-end px-10">
         <div className="flex gap-2 items-center">
-          <Progress className="w-30 h-0.75 bg-brand" value={progressValue} indicatorClassName="bg-white" />
+          <Progress
+            className="w-30 h-0.75 bg-brand"
+            value={progressValue}
+            indicatorClassName="bg-white"
+          />
           <div className="text-sm text-white font-semibold">
             {currentTestimonial} / {testimonialsData.length}
           </div>

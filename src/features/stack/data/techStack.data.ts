@@ -185,7 +185,13 @@ export const backendTechs = [
 
 export const databaseTechs = [techs.sql, techs.mongodb];
 
-export const devOpsTechs = [techs.git, techs.docker, techs.aws, techs.kubernetes, techs.cicd];
+export const devOpsTechs = [
+  techs.git,
+  techs.docker,
+  techs.aws,
+  techs.kubernetes,
+  techs.cicd,
+];
 
 export const iaTechs = [techs.claude, techs.opencode, techs.copilot];
 
@@ -210,6 +216,6 @@ export const techsByCategory: TechCategory[] = [
     name: "AI",
     techs: iaTechs,
   },
-]
+];
 
 export const techStackData = Object.values(techs);

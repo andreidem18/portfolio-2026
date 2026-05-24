@@ -22,8 +22,7 @@ export const useTitleAnimations = () => {
       },
     });
 
-    enterTl
-      .to(split.words, { opacity: 1, y: 0, stagger: 0.1 }, 0.5);
+    enterTl.to(split.words, { opacity: 1, y: 0, stagger: 0.1 }, 0.5);
 
     return () => {
       enterTl.scrollTrigger?.kill();

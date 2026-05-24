@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 import { ArrowRightIcon } from "lucide-react";
 import { useCTATooltip } from "../hooks";
 

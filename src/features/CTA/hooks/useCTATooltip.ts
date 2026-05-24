@@ -16,8 +16,14 @@ export const useCTATooltip = () => {
 
   useEffect(() => {
     if (!tooltipRef.current) return;
-    quickX.current = gsap.quickTo(tooltipRef.current, "x", { duration: 0.4, ease: "power3.out" });
-    quickY.current = gsap.quickTo(tooltipRef.current, "y", { duration: 0.4, ease: "power3.out" });
+    quickX.current = gsap.quickTo(tooltipRef.current, "x", {
+      duration: 0.4,
+      ease: "power3.out",
+    });
+    quickY.current = gsap.quickTo(tooltipRef.current, "y", {
+      duration: 0.4,
+      ease: "power3.out",
+    });
   }, []);
 
   const typeText = (text: string) => {
@@ -49,7 +55,10 @@ export const useCTATooltip = () => {
   };
 
   const visible = hovered || focused || copied;
-  const tooltipStyle = focused && !hovered ? { left: focusPos.x, top: focusPos.y } : { left: 0, top: 0 };
+  const tooltipStyle =
+    focused && !hovered
+      ? { left: focusPos.x, top: focusPos.y }
+      : { left: 0, top: 0 };
 
   return {
     copied,

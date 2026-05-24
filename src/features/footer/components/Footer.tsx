@@ -5,17 +5,22 @@ import { MapPinIcon } from "lucide-react";
 import { useFooterAnimations } from "../hooks";
 
 export const Footer = () => {
-  
-  const {containerRef, nameRef} = useFooterAnimations();
+  const { containerRef, nameRef } = useFooterAnimations();
 
   return (
     <div
       ref={containerRef}
       className="flex flex-col min-h-dvh bg-cover relative text-white"
-      style={{ backgroundImage: `url(${footerImage.src})`, backgroundPositionX: "20%" }}
+      style={{
+        backgroundImage: `url(${footerImage.src})`,
+        backgroundPositionX: "20%",
+      }}
     >
       <section className="grow relative z-10 p-8 gap-5 flex flex-col lg:flex-row lg:justify-between">
-        <div ref={nameRef} className="flex flex-col text-[clamp(4rem,12vw,14rem)] font-light mt-10 gap-2 lg:leading-[100%]">
+        <div
+          ref={nameRef}
+          className="flex flex-col text-[clamp(4rem,12vw,14rem)] font-light mt-10 gap-2 lg:leading-[100%]"
+        >
           <SplitText text="Andrés" className="font-bold" />
           <SplitText text="Mendoza" />
           <span className="text-base flex gap-2">
@@ -58,7 +63,13 @@ export const Footer = () => {
   );
 };
 
-const SplitText = ({ text, className }: { text: string; className?: string }) => (
+const SplitText = ({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) => (
   <span className={className} aria-label={text}>
     {text.split("").map((char, i) => (
       <span key={i} className="letter inline-block" aria-hidden="true">

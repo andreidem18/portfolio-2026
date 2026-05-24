@@ -83,6 +83,7 @@ const getRandomNumber = (min: number, max: number) => {
 const findRandomTechId = (visibleTechs: Tech[]) => {
   const visibleNames = new Set(visibleTechs.map((t) => t.name));
   const available = techStackData.filter((t) => !visibleNames.has(t.name));
-  if (!available.length) throw new Error("There was a problem loading the techs");
+  if (!available.length)
+    throw new Error("There was a problem loading the techs");
   return available[Math.floor(Math.random() * available.length)];
 };

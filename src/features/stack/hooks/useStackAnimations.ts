@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "@/lib/gsap";
 
 interface Params {
-  titleRef: RefObject<HTMLHeadingElement | null>
+  titleRef: RefObject<HTMLHeadingElement | null>;
 }
 
 export const useStackAnimations = ({ titleRef }: Params) => {
@@ -63,7 +63,10 @@ export const useStackAnimations = ({ titleRef }: Params) => {
         },
       });
 
-      const circles = gsap.utils.toArray<HTMLElement>(".circle-background", sectionRef.current);
+      const circles = gsap.utils.toArray<HTMLElement>(
+        ".circle-background",
+        sectionRef.current,
+      );
 
       tl.to(circles, { y: -100, duration: 5 }, 0);
       tl.to(titleRef.current, { y: -10, duration: 5 }, 0);
