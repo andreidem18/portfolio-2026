@@ -33,7 +33,7 @@ export const useTitleAnimations = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         scrub: 2,
-        start: "bottom 90%",
+        start: "top top",
         end: "bottom top",
       },
     });

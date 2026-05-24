@@ -11,7 +11,7 @@ export const MyStackSection = () => {
   const { titleRef } = useTitleAnimations();
   const { sectionRef, cardsContainerRef } = useStackAnimations({ titleRef });
   return (
-    <section ref={sectionRef} className="min-h-dvh bg-brand text-white relative overflow-hidden">
+    <section ref={sectionRef} className="min-h-dvh bg-brand text-white relative overflow-hidden" id="stack">
       <div className="max-w-6xl mx-auto py-20 px-10 min-h-dvh flex flex-col">
         <h2 className="text-[clamp(1.5rem,3.2vw,3rem)] leading-[110%] " ref={titleRef} key={locale}>
           {t.rich("title", {

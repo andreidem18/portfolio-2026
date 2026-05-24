@@ -49,7 +49,7 @@ export const NavigationMenu = () => {
 
   const navItems = [
     {name: t("experience"), href: "#experience"},
-    {name: t("skills"), href: "#skills"},
+    {name: t("skills"), href: "#stack"},
     {name: t("projects"), href: "#projects"},
   ]
 
@@ -80,6 +80,7 @@ export const NavigationMenu = () => {
             <a
               key={item.href}
               href={item.href}
+              onClick={() => setIsMenuOpen(false)}
               className="text-white hover:text-white/80 transition-colors relative group text-[clamp(3rem,6vw,5rem)] w-fit leading-[80%] font-medium nav-links"
             >
               {item.name}
@@ -88,6 +89,7 @@ export const NavigationMenu = () => {
           ))}
           <a
             href={`#contact`}
+            onClick={() => setIsMenuOpen(false)}
             className="text-white hover:text-white/80 transition-all hover:gap-7 flex items-center gap-4 group text-[clamp(1rem,2vw,1.1rem)] w-fit leading-10 font-medium mt-10 nav-links"
           >
             <div className="relative">

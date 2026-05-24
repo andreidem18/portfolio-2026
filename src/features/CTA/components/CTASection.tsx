@@ -10,7 +10,7 @@ export const CTASection = () => {
   const {titleRef} = useTitleAnimations();
 
   return (
-    <section className="flex p-10 lg:min-h-dvh">
+    <section className="flex p-10 lg:min-h-dvh" id="contact">
       <div className="border border-border grow flex flex-col rounded-4xl overflow-hidden">
         <div className="p-5 max-w-200 flex flex-col gap-2 grow py-20 lg:px-[5vw]">
           <div className="grow flex items-center">
