@@ -42,6 +42,7 @@ export const useFooterAnimations = () => {
             trigger: nameEl,
             start: "top 50%",
             end: "top 20%",
+            scrub: 1,
           },
         }
       );
