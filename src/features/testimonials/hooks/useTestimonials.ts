@@ -44,13 +44,13 @@ export const useTestimonials = () => {
       sectionRef.current,
     );
 
-    tl.to(titleRef.current, { y: -30 }, 0);
+    tl.to(titleRef.current, { y: -60 }, 0);
 
     circles.forEach((circle, i) => {
       tl.to(
         circle,
         {
-          y: i % 2 === 0 ? -20 : 40,
+          y: i % 2 === 0 ? -80 : 90,
         },
         0,
       );

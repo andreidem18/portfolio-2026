@@ -12,7 +12,7 @@ export const Footer = () => {
     <div
       ref={containerRef}
       className="flex flex-col min-h-dvh bg-cover relative text-white"
-      style={{ backgroundImage: `url(${footerImage.src})`, backgroundPositionX: "center" }}
+      style={{ backgroundImage: `url(${footerImage.src})`, backgroundPositionX: "20%" }}
     >
       <section className="grow relative z-10 p-8 gap-5 flex flex-col lg:flex-row lg:justify-between">
         <div ref={nameRef} className="flex flex-col text-[clamp(4rem,12vw,14rem)] font-light mt-10 gap-2 lg:leading-[100%]">
