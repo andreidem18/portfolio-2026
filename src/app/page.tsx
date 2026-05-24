@@ -6,6 +6,7 @@ import { Testimonials } from "@/features/testimonials";
 import { ProjectsSection } from "@/features/projects";
 import { MyStackSection } from "@/features/stack/components/MyStackSection";
 import { CTASection } from "@/features/CTA";
+import { Footer } from "@/features/footer";
 
 export default function Home() {
   return (
@@ -22,8 +23,7 @@ export default function Home() {
       <ProjectsSection />
       <Testimonials />
       <CTASection />
-      <div className="h-dvh"></div>
-      Hello world
+      <Footer />
     </div>
   );
 }
