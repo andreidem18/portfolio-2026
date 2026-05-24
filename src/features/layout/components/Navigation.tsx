@@ -60,10 +60,10 @@ export const Navigation = () => {
         <div className="mx-auto px-15 py-5.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="text-sm text-brand max-w-8 leading-none">
+              <a href="#top" className="text-sm text-brand max-w-8 leading-none">
                 <span className="font-bold">Andrés </span>
                 <span className="">Mendoza</span>
-              </span>
+              </a>
             </div>
             <div className="flex gap-6">
               <LanguageSwitcher />
