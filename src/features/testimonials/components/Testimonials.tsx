@@ -24,7 +24,7 @@ export const Testimonials = () => {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="flex flex-col justify-center gap-4 py-10 h-dvh bg-brand overflow-hidden relative"
+      className="flex flex-col justify-center gap-4 py-10 h-screen bg-brand overflow-hidden relative"
     >
       <h3
         className="text-[clamp(1.5rem,3.2vw,2.25rem)] max-w-130 leading-[110%] pb-4 text-white  px-10"

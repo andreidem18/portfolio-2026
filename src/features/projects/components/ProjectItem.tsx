@@ -20,7 +20,7 @@ export const ProjectItem = ({ project }: Props) => {
   return (
     <div
       key={project.name}
-      className="mb-20 flex flex-col md:flex-col-reverse items-center gap-6 h-dvh relative"
+      className="mb-20 flex flex-col md:flex-col-reverse items-center gap-6 h-screen relative"
       ref={projectRef}
     >
       <a
