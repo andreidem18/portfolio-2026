@@ -53,7 +53,10 @@ export const AboutMeSection = () => {
   const t = useTranslations("aboutMe");
 
   return (
-    <section className="h-screen bg-brand text-white flex" ref={aboutMeSectionRef}>
+    <section
+      className="h-screen bg-brand text-white flex"
+      ref={aboutMeSectionRef}
+    >
       <div className="flex flex-col md:justify-center p-12 lg:p-22 pt-20 grow">
         <p
           className="text-[clamp(1.25rem,3.2vw,3rem)] leading-6 sm:leading-7 md:leading-8 lg:leading-9 xl:leading-13"

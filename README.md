@@ -4,17 +4,17 @@ Personal portfolio built with modern web technologies, featuring smooth animatio
 
 ## Tech Stack
 
-| Category | Technology |
-|---|---|
-| Framework | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
-| Language | TypeScript |
-| Styling | Tailwind CSS v4 |
-| UI Components | shadcn/ui + Radix UI |
-| Animations | GSAP + @gsap/react |
-| Smooth Scroll | Lenis |
-| Internationalization | next-intl |
-| Icons | Lucide React |
-| Package Manager | pnpm |
+| Category             | Technology                                               |
+| -------------------- | -------------------------------------------------------- |
+| Framework            | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
+| Language             | TypeScript                                               |
+| Styling              | Tailwind CSS v4                                          |
+| UI Components        | shadcn/ui + Radix UI                                     |
+| Animations           | GSAP + @gsap/react                                       |
+| Smooth Scroll        | Lenis                                                    |
+| Internationalization | next-intl                                                |
+| Icons                | Lucide React                                             |
+| Package Manager      | pnpm                                                     |
 
 ## Running Locally
 

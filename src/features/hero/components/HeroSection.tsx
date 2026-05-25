@@ -6,7 +6,6 @@ import { cvEnglish, cvSpanish } from "@/assets/documents";
 import { useLocale } from "next-intl";
 
 export const HeroSection = () => {
-
   const locale = useLocale();
 
   return (
@@ -20,7 +19,9 @@ export const HeroSection = () => {
         <div className="flex gap-6 pt-7">
           <ScrollCTA />
           <a href={locale === "en" ? cvEnglish : cvSpanish} download>
-            <Button><DownloadIcon /> Download CV</Button>
+            <Button>
+              <DownloadIcon /> Download CV
+            </Button>
           </a>
         </div>
       </div>
