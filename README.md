@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio 2026
 
-## Getting Started
+Personal portfolio built with modern web technologies, featuring smooth animations, internationalization, and a clean feature-based architecture.
 
-First, run the development server:
+## Tech Stack
+
+| Category | Technology |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
+| Language | TypeScript |
+| Styling | Tailwind CSS v4 |
+| UI Components | shadcn/ui + Radix UI |
+| Animations | GSAP + @gsap/react |
+| Smooth Scroll | Lenis |
+| Internationalization | next-intl |
+| Icons | Lucide React |
+| Package Manager | pnpm |
+
+## Running Locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm i
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technical Decisions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Feature-based folder structure** — code is organized by feature (`hero`, `projects`, `experience`, etc.) rather than by type (`components`, `hooks`, `utils`). This keeps related logic co-located and scales better as the project grows.
 
-## Learn More
+**GSAP for animations** — chosen over CSS-only or Framer Motion for its fine-grained control over scroll-triggered sequences, timeline pinning, and cross-browser consistency. The `@gsap/react` integration keeps animations tied to the React lifecycle.
 
-To learn more about Next.js, take a look at the following resources:
+**Lenis for smooth scroll** — a lightweight smooth-scroll library that integrates cleanly with GSAP's ScrollTrigger, allowing scroll-based animations to feel physically accurate without fighting the browser's native scroll behavior.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**next-intl for i18n** — provides compile-time type-safe translations and works natively with the Next.js App Router, including server components and middleware-based locale detection.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Tailwind CSS v4** — uses the new CSS-first configuration (`@tailwindcss/postcss`) instead of `tailwind.config.js`, reducing configuration overhead and leveraging native CSS cascade layers.
 
-## Deploy on Vercel
+**Turbopack** — enabled in development for significantly faster HMR compared to Webpack, especially noticeable as the number of components grows.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Trade-offs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **GSAP + Lenis coordination** — GSAP ScrollTrigger and Lenis must be initialized in the correct order (Lenis must tick before ScrollTrigger updates). This adds a small layer of setup complexity in the providers.
+- **shadcn/ui copy-paste model** — components are copied into the repo rather than imported from a package. This gives full control but means updates from upstream must be applied manually.
+- **Client-only animations** — scroll-driven animations are client-only to avoid hydration mismatches, so the page layout must not depend on animation state at render time.
+
+## Deploy
+
+The project is deployed on [Vercel](https://vercel.com), which is the natural hosting target for Next.js apps. Vercel provides:
+
+- Zero-config deployment from the `main` branch
+- Automatic preview deployments for every push
+- Edge network CDN for static assets
+- Built-in environment variable management
+
+To deploy your own instance, import the repository in the Vercel dashboard — no additional configuration is needed.
