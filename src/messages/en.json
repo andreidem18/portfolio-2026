@@ -9,7 +9,8 @@
     "fullStack": "Fullstack Developer",
     "frontend": "Frontend Developer",
     "backend": "Backend Developer",
-    "softwareEngineer": "Software Engineer"
+    "softwareEngineer": "Software Engineer",
+    "downloadCV": "Download CV"
   },
   "aboutMe": {
     "line1": "I enjoy building solutions that scale",
@@ -57,5 +58,8 @@
     "mainCTA": "Let's connect",
     "copy": "Copy",
     "copied": "Email copied!"
+  },
+  "footer": {
+    "builtWith": "Website made using:"
   }
 }

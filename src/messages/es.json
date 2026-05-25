@@ -3,13 +3,14 @@
     "experience": "Experiencia",
     "skills": "Habilidades",
     "projects": "Proyectos",
-    "connectCTA": "Contactame"
+    "connectCTA": "Contáctame"
   },
   "hero": {
     "fullStack": "Desarrollador Full stack",
     "frontend": "Desarrollador Frontend",
     "backend": "Desarrollador Backend",
-    "softwareEngineer": "Software Engineer"
+    "softwareEngineer": "Software Engineer",
+    "downloadCV": "Descargar CV"
   },
   "aboutMe": {
     "line1": "Me gusta construir soluciones que crezcan",
@@ -57,5 +58,8 @@
     "mainCTA": "Contáctame",
     "copy": "Copiar",
     "copied": "Email copiado!"
+  },
+  "footer": {
+    "builtWith": "Sitio web hecho con:"
   }
 }

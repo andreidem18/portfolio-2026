@@ -3,9 +3,11 @@
 import { footerImage } from "@/assets/images";
 import { MapPinIcon } from "lucide-react";
 import { useFooterAnimations } from "../hooks";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
   const { containerRef, nameRef } = useFooterAnimations();
+  const t = useTranslations("footer");
 
   return (
     <div
@@ -28,7 +30,7 @@ export const Footer = () => {
           </span>
         </div>
         <div className="flex flex-col gap-4 items-end lg:justify-end">
-          <span className="text-sm">Website made using:</span>
+          <span className="text-sm">{t("builtWith")}</span>
           <ul className="flex flex-col gap-2 font-bold text-right">
             <li>Next.js</li>
             <li>Tailwind CSS</li>

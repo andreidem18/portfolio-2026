@@ -96,7 +96,7 @@ export const NavigationMenu = () => {
             className="text-white hover:text-white/80 transition-all hover:gap-7 flex items-center gap-4 group text-[clamp(1rem,2vw,1.1rem)] w-fit leading-10 font-medium mt-10 nav-links"
           >
             <div className="relative">
-              Let&apos;s connect
+              {t("connectCTA")}
               <span className="absolute bottom-1.5 left-0 w-full h-0.75 bg-white/80 group-hover:w-1/4 transition-all duration-300"></span>
             </div>
             <ArrowRight className="size-5" />

@@ -3,10 +3,11 @@ import { ScrollCTA } from "./ScrollCTA";
 import { Button } from "@/components/ui/button";
 import { DownloadIcon } from "lucide-react";
 import { cvEnglish, cvSpanish } from "@/assets/documents";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const HeroSection = () => {
   const locale = useLocale();
+  const t = useTranslations("hero");
 
   return (
     <section
@@ -20,7 +21,7 @@ export const HeroSection = () => {
           <ScrollCTA />
           <a href={locale === "en" ? cvEnglish : cvSpanish} download>
             <Button>
-              <DownloadIcon /> Download CV
+              <DownloadIcon /> {t("downloadCV")}
             </Button>
           </a>
         </div>
