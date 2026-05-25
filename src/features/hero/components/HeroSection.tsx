@@ -1,7 +1,14 @@
 import { TextChanging } from "./TextChanging";
 import { ScrollCTA } from "./ScrollCTA";
+import { Button } from "@/components/ui/button";
+import { DownloadIcon } from "lucide-react";
+import { cvEnglish, cvSpanish } from "@/assets/documents";
+import { useLocale } from "next-intl";
 
 export const HeroSection = () => {
+
+  const locale = useLocale();
+
   return (
     <section
       id="top"
@@ -10,7 +17,12 @@ export const HeroSection = () => {
       <div className="absolute bottom-12">
         <strong className=" text-5xl">Andres/</strong>
         <TextChanging />
-        <ScrollCTA />
+        <div className="flex gap-6 pt-7">
+          <ScrollCTA />
+          <a href={locale === "en" ? cvEnglish : cvSpanish} download>
+            <Button><DownloadIcon /> Download CV</Button>
+          </a>
+        </div>
       </div>
     </section>
   );
