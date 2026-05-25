@@ -13,6 +13,7 @@ import { ArrowRight, XIcon } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "@/lib/gsap";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export const NavigationMenu = () => {
   const isMenuOpen = useLayoutStore((s) => s.isMenuOpen);
@@ -79,7 +80,7 @@ export const NavigationMenu = () => {
         <DialogDescription className="sr-only" />
         <nav className="h-full flex flex-col justify-center p-6 gap-6">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               onClick={() => setIsMenuOpen(false)}
@@ -87,9 +88,9 @@ export const NavigationMenu = () => {
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.75 bg-white/80 group-hover:w-full transition-all duration-300"></span>
-            </a>
+            </Link>
           ))}
-          <a
+          <Link
             href={`#contact`}
             onClick={() => setIsMenuOpen(false)}
             className="text-white hover:text-white/80 transition-all hover:gap-7 flex items-center gap-4 group text-[clamp(1rem,2vw,1.1rem)] w-fit leading-10 font-medium mt-10 nav-links"
@@ -99,7 +100,7 @@ export const NavigationMenu = () => {
               <span className="absolute bottom-1.5 left-0 w-full h-0.75 bg-white/80 group-hover:w-1/4 transition-all duration-300"></span>
             </div>
             <ArrowRight className="size-5" />
-          </a>
+          </Link>
         </nav>
         <CursorGlow />
       </DialogContent>
