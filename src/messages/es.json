@@ -23,15 +23,15 @@
     "title": "<bold>Mi</bold> experiencia",
     "finaipro": {
       "title": "Desarrollador Full Stack",
-      "items": "<li>Desarrollé componentes reutilizables en React, mejorando la velocidad de desarrollo del equipo</li> <li>Contribuí a la optimización del rendimiento, reduciendo los tiempos de carga</li> <li>Colaboré con el equipo de UX para mejorar la experiencia de usuario en flujos clave</li><li>Construí y mantuve APIs REST utilizando Node.js</li> <li>Trabajé con PostgreSQL para soluciones de datos escalables</li>"
+      "items": "<li>Desarrollé y mantuve una aplicación full stack para productos fintech, soportando flujos de análisis de inversión impulsados por IA.</li> <li>Escribí y optimicé consultas SQL sobre datasets financieros de más de 10K registros, reduciendo el tiempo de respuesta promedio en un 60%</li> <li>Utilicé flujos de trabajo con agentes de IA y herramientas como Claude Code para acelerar el desarrollo, depuración y prototipado.</li><li>Gané un hackathon interno diseñando y construyendo el frontend de una plataforma de generación de chatbots, con enfoque en UX y prototipado rápido.</li>"
     },
     "academlo": {
       "title": "Desarrollador Full Stack e instructor",
-      "items": "<li>Desarrollé y mantuve servicios web para plataformas internas, contribuyendo a la estabilidad y escalabilidad del sistema</li><li>Impartí clases técnicas en vivo sobre React, Node.js, Express y SQL, formando a más de 300 estudiantes en desarrollo web del mundo real</li><li>Guié a estudiantes a través de proyectos prácticos, ayudándolos a construir y desplegar aplicaciones full stack</li><li>Conecté el desarrollo con la educación simplificando conceptos técnicos complejos y mejorando los resultados de aprendizaje</li><li>Fortalecí habilidades de comunicación, resolución de problemas y mentoría en un entorno de aprendizaje dinámico</li>"
+      "items": "<li>Desarrollé y mantuve un Sistema de Gestión de Aprendizaje (LMS) full stack con más de 500 usuarios activos diarios, a cargo del frontend y el backend.</li><li>Dicté más de 200 horas de clases en vivo sobre React, Node.js, Express y SQL a más de 500 estudiantes, con una satisfacción superior al 95%.</li>"
     },
     "aisd": {
       "title": "Desarrollador Full Stack Junior",
-      "items": "<li>Desarrollé aplicaciones web utilizando React y Django, integrando interfaces frontend con servicios backend</li><li>Participé en todo el ciclo de vida del desarrollo, desde el diseño de funcionalidades hasta la implementación, pruebas y despliegue</li><li>Construí y consumí APIs REST para permitir una comunicación eficiente entre sistemas</li><li>Colaboré con equipos multidisciplinarios para entregar soluciones centradas en el usuario</li><li>Adquirí experiencia práctica en desarrollo full stack, mejorando la calidad del código y los flujos de trabajo de desarrollo</li>"
+      "items": "<li>Desarrollé aplicaciones web utilizando React y Django, integrando interfaces frontend con servicios backend</li><li>Participé en todo el ciclo de vida del desarrollo, desde el diseño de funcionalidades hasta la implementación, pruebas y despliegue</li><li>Construí y consumí APIs REST para permitir una comunicación eficiente entre sistemas</li>"
     }
   },
   "techStack": {
