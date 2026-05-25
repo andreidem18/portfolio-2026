@@ -35,11 +35,11 @@ export const useFooterAnimations = () => {
           y: 0,
           rotateY: 0,
           filter: "blur(0px)",
-          stagger: 0.04,
+          stagger: 0.15,
           ease: "back.out(1.4)",
           scrollTrigger: {
             trigger: nameEl,
-            start: "top 50%",
+            start: "top 40%",
             end: "top 20%",
             scrub: 1,
           },
